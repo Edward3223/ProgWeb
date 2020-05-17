@@ -1,6 +1,6 @@
 .divwithlogo {
-    background: #5dbcd2;
-    box-shadow: 1px 0px 4px #5dbcd2;
+    background: #d9534f;
+    box-shadow: 1px 0px 4px #d9534f;
     height: 250px;
     position: relative;
     top: 30px;
@@ -24,7 +24,7 @@
     border-radius: 15px;
     font-size: larger;
     box-shadow: 3px 5px 3px white;
-    height: 300px;
+    height: 350px;
 }
 
 .textinfo {
@@ -34,7 +34,7 @@
     margin-left: 40px;
     right: 20px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     top: 50px;
 }
 
@@ -52,7 +52,7 @@
     margin-bottom: 0px;
 }
 
-.infoseries {
+.infohistory {
     position: relative;
     top: 100px;
     margin-left: 100px;
@@ -61,7 +61,20 @@
     border-radius: 15px;
     font-size: larger;
     box-shadow: 3px 5px 3px white;
-    height: auto;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.infoturist {
+    position: relative;
+    top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: larger;
+    box-shadow: 3px 5px 3px white;
+    height: 500px;
     margin-top: 50px;
 }
 
@@ -69,7 +82,7 @@
     display: flex;
     align-content: center;
     position: relative;
-    left: 200px;
+    left: 40px;
 }
 
 .titleseries {
@@ -84,7 +97,13 @@ body {
     background-color: #333333;
 }
 
-.imgseries {
+.imgturism {
     width: 250px;
     height: 400px;
+    margin-right: 10px;
+}
+
+.titleturism {
+    text-align: center;
+    margin-top: 0px;
 }
