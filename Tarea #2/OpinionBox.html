@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resoruce/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <section class="sendbox">
+
+        <h2 style="font-family: monospace; text-align: center;">Envia tu Opinion!!</h2>
+
+        <form class="formulary" action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Escribe tu nombre:
+            <input type="text" name="name"><br> Contraseña:
+
+            <input type="password" name="mail"><br>
+
+            <label for="myfile">Select a file:</label>
+
+            <input type="file" id="myfile" name="myfile">
+
+            <div>
+
+                <p>Este manuel te parece:</p>
+                <input type="radio" name="opinion" value="Muy bueno">
+                <label>Muy bueno</label>
+                <input type="radio" name="opinion" value="Bueno">
+                <label>Bueno</label>
+                <input type="radio" name="opinion" value="Malo">
+                <label>Malo</label>
+                <input type="radio" name="opinion" value="Muy Malo">
+                <label>Muy Malo</label>
+
+            </div>
+
+
+            <input type="checkbox" id="Updates" name="Updates" value="Avisame">
+            <label for="Updates"> Avisarme de Actualizaciones</label>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>
