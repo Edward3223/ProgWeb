@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de HTML5</title>
+    <link rel="stylesheet" href="../resoruce/stylecompforms.css" />
+</head>
+
+<body class="body1">
+    <section>
+
+        <div class="frombox">
+
+            <h3 style="text-align: center; margin-top: 25;">Formulario de formulacion</h3>
+
+            <form class="formstyle">
+                <p>
+                    <label>
+							Nombre:
+							<input name="name" required autofocus tabindex="1" />
+						</label>
+                </p>
+                <p>
+                    <label>
+							Email:
+							<input
+								name="email"
+								type="email"
+								required
+								tabindex="3"
+								value="lenguaje@gmail.com"
+								readonly
+							/>
+						</label>
+                </p>
+                <p>
+                    <label>
+							URL:
+							<input name="url" type="url" tabindex="2" />
+						</label>
+                </p>
+                <p>
+                    <label>
+							Edad:
+							<input name="edad" type="number" min="1" max="90" value="1" />
+						</label>
+                </p>
+                <p>
+                    <label>
+							Fecha:
+							<input name="fecha" type="date" size="20" />
+						</label>
+                </p>
+                <p>
+                    <label>
+							Mes:
+							<input name="mes" type="month" size="20" />
+						</label>
+                </p>
+                <p>
+                    <label>
+							Comentario :
+							<textarea name="comment" required> </textarea>
+						</label>
+                </p>
+                <p>
+                    <input style="position: relative; left: 100px;" type="submit" value="Enviar" />
+                </p>
+            </form>
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
