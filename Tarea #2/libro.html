@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resoruce/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <section class="sendbox">
+
+        <br>
+        <h2 style="font-family: monospace; text-align: center;">Registro</h2>
+
+        <form name=" miformulario" class="formulary" action="mailto:someone@example.com" method="post" enctype="text/plain">
+
+            <div>
+
+                <label> <b>Datos personales</b> </label><br>
+                <label><b> Nombre: </b></label>
+                <input style="margin-bottom: 5px;" class="shadows" type="text" name="Nombre"><br>
+                <label><b> Apellido: </b></label>
+                <input class="shadows" type="text" name="Apellido"><br>
+
+            </div>
+
+            <div style="margin-top: 20px;">
+                <label> <b>Indica un pseudonimo y una contraseña</b> </label> <br>
+                <label><b> Pseudonimo: </b></label>
+                <input required autofocus="1" maxlength="16" class="shadows" type="text" name="name"><br>
+
+                <label> <b> Contraseña: </b> </label>
+                <input required autofocus="1" minlength="12" class="shadows" type="password" name="name">
+
+            </div>
+
+
+            <div style="display: flex; justify-content: space-between;">
+
+
+                <div>
+
+                    <br /> Edad: <br>
+                    <input type="radio" name="edad" value="0-10" /> 0-10<br />
+                    <input type="radio" name="edad" value="11-20" />11-20<br />
+                    <input type="radio" name="edad" value="21-30" />21-30<br />
+                    <input type="radio" name="edad" value="31-40" />31-40<br />
+                    <input type="radio" name="edad" value="41-mas" />41-mas<br />
+
+                </div>
+
+                <div>
+
+                    <br /> Donde vives?: <br>
+                    <input type="radio" name="where" value="0-10" />Santiago<br />
+                    <input type="radio" name="where" value="11-20" />Santo Domingo<br />
+                    <input type="radio" name="where" value="21-30" />La Romana<br />
+                    <input type="radio" name="where" value="31-40" />San Crsitobal<br />
+                    <input type="radio" name="where" value="" /><label>Otros</label> <input class="shadows" style="width: 80px;" type="text" name="otro lugar" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
+
+
+                </div>
+
+                <div>
+                    <br /> Aficiones <br>
+                    <input type="radio" name="aficion" value="deporte" />Deporte<br />
+                    <input type="radio" name="aficion" value="musica" />Música<br />
+                    <input type="radio" name="aficion" value="lectura" />Lectura<br />
+                    <input type="radio" name="aficion" value="pesca" />Pesca<br />
+                    <input type="radio" name="aficion" value="" /> <label>Otros</label> <input class="shadows" style="width: 80px;" type="text" name="otra aficion" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="divbuton">
+
+                <input class="shadows" type="submit" value="Send">
+                <input class="shadows" type="reset" value="Reset">
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>
