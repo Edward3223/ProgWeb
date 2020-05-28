@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de js</title>
+</head>
+
+<body>
+    <script>
+        var numero1;
+        var numero2;
+        var numero3;
+        var grupodenumeros = [];
+
+        numero1 = prompt(' digite 3 numero, todos deben de ser distintos. Digite su primer numero')
+        numero2 = prompt('digite su segundo numero')
+        numero3 = prompt('digite su tercer numero')
+
+        if (parseInt(numero1) == parseInt(numero2) || parseInt(numero1) == parseInt(numero3) || parseInt(numero2) == numero3) {
+            document.write('dentro de sus numero elegidos hay al menos uno repetido, actualize la pagina y vuelva a intentarlo')
+
+        } else if (parseInt(numero1) < 0 || parseInt(numero2) < 0 || parseInt(numero3) < 0) {
+            document.write('su numero no puede ser negativo actualize y vuelva a intenterlo')
+        } else {
+            grupodenumeros.push(numero1);
+            grupodenumeros.push(numero2);
+            grupodenumeros.push(numero3);
+
+            document.write('tu numero maximo es: ', Math.max.apply(null, grupodenumeros))
+            document.write('<br>')
+            document.write('tu numero minimo es: ', Math.min.apply(null, grupodenumeros))
+
+
+
+        }
+    </script>
+</body>
+
+
+</html>
