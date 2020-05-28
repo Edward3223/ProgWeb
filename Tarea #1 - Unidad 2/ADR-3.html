@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numero1;
+        var numero2;
+        var suma;
+        var producto
+        numero1 = prompt('digite su primer numero:')
+        numero2 = prompt('digite su segundo numero: ')
+
+        if (numero1 > numero2) {
+            suma = parseInt(numero1) + parseInt(numero2);
+            document.write('El primer numero era mayor, por lo tanto la suma es: ', suma)
+        } else if (numero1 < numero2) {
+            producto = parseInt(numero1) * parseInt(numero2);
+            document.write('El segundo numero es mayor, por lo tanto su producto es: ', producto)
+        }
+    </script>
+
+</body>
+
+</html>
