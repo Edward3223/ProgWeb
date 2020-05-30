@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Realice una página web que lea los lados de 4 triángulos, e informar:
+    a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales),
+    isósceles (dos lados iguales), o escaleno (ningún lado igual)
+    b) Cantidad de triángulos de cada tipo.
+    c) Tipo de triángulo del que hay menor cantidad. -->
+
+
+    <script>
+        //Contadores//
+        var equilatero = 0
+        var isosceles = 0
+        var escaleno = 0
+
+        //Lectura de los triangulos//
+        var triangulo1 = [3, 3, 3]
+        var triangulo2 = [6, 2, 2]
+        var triangulo3 = [3, 3, 3]
+        var triangulo4 = [3, 3, 3]
+
+
+        function identificator(triangulo) {
+            //Si el triangulo es equilatero//
+            if (triangulo[0] == triangulo[1] && triangulo[0] == triangulo[2]) {
+                equilatero += 1;
+                //Si el triangulo es isosceles//
+            } else if (triangulo[0] == triangulo[1] || triangulo[2] == triangulo[1] || triangulo[2] == triangulo[0]) {
+                isosceles += 1
+                    //Si el triangulo es escaleno//
+            } else if (triangulo[0] != triangulo[1] && triangulo[1] != triangulo[2]) {
+                escaleno += 1
+
+            }
+        }
+
+        identificator(triangulo1)
+        identificator(triangulo2)
+        identificator(triangulo3)
+        identificator(triangulo4)
+
+
+
+
+        document.write('Hay: ', equilatero, ' equilateros')
+        document.write('<br>')
+        document.write('Hay: ', isosceles, ' isosceles')
+        document.write('<br>')
+        document.write('Hay: ', escaleno, ' escalenos')
+        document.write('<br>')
+        document.write('<br>')
+
+        //Detectar la menos cantidad de triangulo segun su tipo
+        if (equilatero < isosceles && equilatero < escaleno) {
+            document.write('hay menos equilateros')
+        } else if (isosceles < equilatero && isosceles < escaleno) {
+            document.write('hay menos isosceles')
+        } else if (escaleno < equilatero && escaleno < isosceles) {
+            document.write('hay menos escaleno')
+        } else {
+            document.write('hay un poco de todo')
+        }
+    </script>
+
+</body>
+
+</html>
